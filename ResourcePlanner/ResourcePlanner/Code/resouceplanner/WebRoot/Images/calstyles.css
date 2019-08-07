@@ -1,0 +1,85 @@
+TABLE.notepad {
+	BORDER-RIGHT: black 1px solid; 
+	BORDER-TOP: black 1px solid; 
+	BORDER-LEFT: black 1px solid; 
+	BORDER-BOTTOM: black 1px solid
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 12px;
+	color : #660033;
+	background-color : #FFFFEE;
+	FONT-WEIGHT: bold;
+}
+TABLE.clsCalPopUp {
+	BORDER-RIGHT: black 1px solid; 
+	BORDER-TOP: black 1px solid; 
+	BORDER-LEFT: black 1px solid; 
+	BORDER-BOTTOM: black 1px solid
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 12px;
+	color : #660033;
+	background-color : #FFFFEE;
+	FONT-WEIGHT: bold;
+}
+TABLE.clsCalPopUpData {
+	BORDER-RIGHT: black 1px solid; 
+	BORDER-TOP: black 1px solid; 
+	BORDER-LEFT: black 1px solid; 
+	BORDER-BOTTOM: black 1px solid
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 12px;
+	color : #660033;
+	background-color : #FFFFEE;
+	FONT-WEIGHT: bold;
+}
+
+TR.clsCalHeading {
+	color : #993399;
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 13px;
+	background-color : #FFCC99;
+	FONT-WEIGHT: bold;
+}
+td.clsCalWeekDay {
+	color : #000000;
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 12px;
+	FONT-WEIGHT: bold;
+
+}
+td.clsCalWeekHol {
+	color : #FF3300;
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 12px;
+	FONT-WEIGHT: bold;
+
+}
+td.clsCalWeekEnd {
+	color : #FF3300;
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 12px;
+	FONT-WEIGHT: bold;
+
+}
+div.clsCalToday{
+	  font-family : Verdana,Arial,Helvetica,Sans-serif;
+	  font-size : 12px;
+	  color : #FF33CC;
+	  font-weight: bold;
+	  text-decoration : underline;
+}  
+div.clsCalDaySelect{
+	  font-family : Verdana,Arial,Helvetica,Sans-serif;
+	  font-size : 12px;
+	  color : #339900;
+	  font-weight: bold;
+	  text-decoration : underline;
+} 
+td.clsCalWeekNum{
+	color : #000000;
+	font-family : Verdana,Arial,Helvetica,Sans-serif;
+	font-size : 13px;
+	FONT-WEIGHT: Normal;
+
+}
+  
+

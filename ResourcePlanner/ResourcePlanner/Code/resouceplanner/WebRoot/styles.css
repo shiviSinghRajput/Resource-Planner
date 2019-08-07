@@ -1,0 +1,735 @@
+A {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: Normal 9pt Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 0px; CURSOR: pointer; COLOR: blue; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+DIV.notebook {
+	BORDER-RIGHT: midnightblue thin inset; DISPLAY: none; BORDER-LEFT: midnightblue thin inset; WIDTH: 90%; BORDER-BOTTOM: midnightblue thin inset; HEIGHT: auto; BACKGROUND-COLOR: #FFFFEE
+}
+TABLE.notebook {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 90%; BORDER-BOTTOM: 0px
+}
+TABLE.tab {
+	WIDTH: 100%
+}
+A.tab {
+	FONT-SIZE: 9pt;
+}
+A.tabUnselected {
+	FONT-SIZE: 9pt
+}
+A.tab {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: normal; COLOR: blue; BORDER-BOTTOM: 0px; TEXT-DECORATION: none;
+	BACKGROUND-COLOR: #FFFFEE;
+}
+A.tab:hover {
+	COLOR: red;
+	BACKGROUND-COLOR: white;
+} 
+A.tabUnselected {
+	COLOR: white
+}
+A.tabUnselected:hover {
+	COLOR: #ff9933
+}
+A.title {
+	CURSOR: normal; COLOR: #FFCC99;
+	BACKGROUND-COLOR: #999966;
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+	BACKGROUND-COLOR: #FFFFEE
+}
+DIV.scrollbar {
+	OVERFLOW: auto; WIDTH: 100%; HEIGHT: 100%
+}
+INPUT {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+INPUT.editinfo {
+	FONT: 10pt Verdana,Arial,Helvetica,sans-serif; VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+TEXTAREA {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt
+}
+H2 {
+	FONT: bold 12pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default
+}
+H3 {
+	FONT: bold 9pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default
+}
+H3.Top {
+	FONT: bold italic 9pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default;
+	BACKGROUND-COLOR: #999966; COLOR: #F3EF49
+}
+
+A:hover {
+	COLOR: #cd5c5c
+}
+TD.results {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #FFFFEE
+}
+TH.results {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana
+}
+TH.results {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #FFFFEE
+}
+BODY.report {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: white
+}
+TABLE.report {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif
+}
+H1.report {
+	FONT: bold 12pt Verdana,Arial,Helvetica,sans-serif
+}
+H2.report {
+	FONT: bold 11pt Verdana,Arial,Helvetica,sans-serif
+}
+H3.report {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif
+}
+H4.report {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif
+}
+BODY.noframesmenu {
+	FONT: 10pt Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #9cc2e4
+}
+TD.noframesmenu {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif
+}
+.menubar {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 0px; CURSOR: pointer; COLOR: white; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+A.menubar:hover {
+	COLOR: #ff9933
+}
+A.menubar:visited {
+	COLOR: #ff9933
+}
+.lblistheaderfont {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; COLOR: white
+}
+.detail_summary {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+.row_odd {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+.row_even {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+TR.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FCCFB1
+}
+TR.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFFFCC
+}
+TR.row_title {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #999966
+}
+TH.row_title {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #999966 ;FONT-WEIGHT: bold; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TD.row_title {
+	FONT-SIZE: 9pt; BACKGROUND-COLOR: #999966 ;FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+TH.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FCCFB1 ;FONT-WEIGHT: bold; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TD.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FCCFB1; FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TH.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFFFCC ;FONT-WEIGHT: bold; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TD.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFFFCC; FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TD.title2text {
+	
+}
+A.detail {
+	FONT-SIZE: 10pt; COLOR: blue
+}
+.navigate {
+	FONT-SIZE: 10pt; COLOR: gray; TEXT-DECORATION: none
+}
+A.navigate {
+	COLOR: blue
+}
+A.navigate:link {
+	COLOR: blue
+}
+A.navigate:visited {
+	COLOR: blue
+}
+A.navigate:active {
+	COLOR: #cd5c5c
+}
+A.navigate:hover {
+	COLOR: #cd5c5c
+}
+.alertmsg {
+	FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif; BACKGROUND-COLOR: yellow
+}
+DIV.dynLayer {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; Z-INDEX: 101; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute; BACKGROUND-COLOR: #000080; layer-background-color: #000080
+}
+LAYER.dynLayer {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; Z-INDEX: 101; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute; BACKGROUND-COLOR: #000080; layer-background-color: #000080
+}
+.dynLayer {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; Z-INDEX: 101; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute; BACKGROUND-COLOR: #000080; layer-background-color: #000080
+}
+.menuframe {
+	BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 0px solid
+}
+.divMenuBar {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; COLOR: white; BACKGROUND-COLOR: #9cc2e4; TEXT-DECORATION: none
+}
+.clsMenuBarItem {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; CURSOR: pointer; COLOR: white; TEXT-DECORATION: none
+}
+A.clsMenuBarItem:hover {
+	COLOR: #fd7d00
+}
+.clsSeparator {
+	FONT: 10pt Verdana,Arial,Helvetica,sans-serif; COLOR: black
+}
+.clsSubMenuItem {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; WIDTH: 100%; CURSOR: pointer; COLOR: white
+}
+A.clsSubMenuItem {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; COLOR: white; BACKGROUND-COLOR: #9cc2e4; TEXT-DECORATION: none
+}
+A.clsSubMenuItem:visited {
+	COLOR: #ff9933
+}
+A.clsSubMenuItem:hover {
+	COLOR: #ff9933
+}
+.clsSubMenuItemImage {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; WIDTH: 11px; CURSOR: pointer; COLOR: white
+}
+.clsSubMenu {
+	BORDER-RIGHT: white 1px outset; PADDING-RIGHT: 5px; BORDER-TOP: white 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 5px; BORDER-LEFT: white 2px outset; WIDTH: 200px; CURSOR: pointer; COLOR: white; PADDING-TOP: 5px; BORDER-BOTTOM: white 1px outset; POSITION: absolute; BACKGROUND-COLOR: #9cc2e4
+}
+.MenuDiv {
+	BORDER-RIGHT: black 1px outset; BORDER-TOP: white 2px outset; FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: white 2px outset; CURSOR: pointer; COLOR: white; BORDER-BOTTOM: black 1px outset; POSITION: absolute; BACKGROUND-COLOR: #9cc2e4
+}
+.MenuItemMarked {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; CURSOR: pointer; COLOR: #ff9933
+}
+.MenuItem {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; CURSOR: pointer; COLOR: white
+}
+.MenuItemDisabled {
+	FONT: bold 10pt Verdana,Arial,Helvetica,sans-serif; CURSOR: pointer; COLOR: gray
+}
+#idMenuBar {
+	Z-INDEX: 99
+}
+#idMenuFlds {
+	Z-INDEX: 98
+}
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+SPAN.menu {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+SPAN.menu {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.menu {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+.clsMenuSelect {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.ctxMenu {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.ctxMenu:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.ctxMenuSel {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.ctxMenuSel:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+.focusField {
+	BACKGROUND-COLOR: #ffff99
+}
+SPAN.menu {
+	COLOR: white
+}
+A.menu {
+	COLOR: white
+}
+.menuDivider {
+	COLOR: white
+}
+DIV.menu {
+	COLOR: white
+}
+DIV.layer {
+	COLOR: white
+}
+A.ctxMenu {
+	COLOR: white
+}
+SPAN.menu {
+	CURSOR: pointer
+}
+A.menu {
+	CURSOR: pointer
+}
+A.ctxMenu {
+	CURSOR: pointer
+}
+A.ctxMenuSel {
+	CURSOR: pointer
+}
+A.menu:hover {
+	COLOR: #cd5c5c
+}
+.clsMenuSelect {
+	COLOR: #cd5c5c
+}
+A.ctxMenu:hover {
+	COLOR: #cd5c5c
+}
+A.ctxMenuSel {
+	COLOR: #cd5c5c
+}
+BODY.menuBar {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+DIV.menu {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+DIV.layer {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+DIV.ctxMenu {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+layer.ctxMenu {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+A.ctxMenu {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+A.ctxMenuSel {
+	BACKGROUND-COLOR: #9cc2e4; layer-background-color: #9cc2e4
+}
+DIV.menu {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute
+}
+DIV.layer {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute
+}
+DIV.ctxMenu {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute
+}
+layer.ctxMenu {
+	BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset; POSITION: absolute
+}
+DIV.menu {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; Z-INDEX: 101; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+DIV.layer {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; Z-INDEX: 101; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+DIV.ctxMenu {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; Z-INDEX: 1; LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TOP: 0px; TEXT-ALIGN: left
+}
+layer.ctxMenu {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; Z-INDEX: 1; LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TOP: 0px; TEXT-ALIGN: left
+}
+.clsButtonDisabled {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 70%; MIN-HEIGHT: 21px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; WHITE-SPACE: nowrap; HEIGHT: 21px; TEXT-DECORATION: none; max-height: 21
+}
+.clsButtonEnabled {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 70%; MIN-HEIGHT: 21px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; WHITE-SPACE: nowrap; HEIGHT: 21px; TEXT-DECORATION: none; max-height: 21
+}
+.clsButtonDown {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 70%; MIN-HEIGHT: 21px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; WHITE-SPACE: nowrap; HEIGHT: 21px; TEXT-DECORATION: none; max-height: 21
+}
+.clsButtonDisabled {
+	COLOR: #999999
+}
+.clsButtonEnabled {
+	COLOR: #000000
+}
+.clsButtonDown {
+	COLOR: #ff9933
+}
+.searchFilterSearch {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: midnightblue; FONT-FAMILY: verdana,arial,helvetica,sans-serif; BACKGROUND-COLOR: white; TEXT-ALIGN: left
+}
+SPAN.searchFilterSearch {
+	BORDER-TOP: 0px; MARGIN-TOP: 0px
+}
+.searchFilterList {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: midnightblue; FONT-FAMILY: verdana,arial,helvetica,sans-serif; BACKGROUND-COLOR: #9cc2e4; TEXT-ALIGN: left
+}
+SPAN.searchFilterList {
+	BORDER-TOP: 0px; MARGIN-TOP: 0px
+}
+.searchFilterSearchButtons {
+	BACKGROUND-COLOR: white
+}
+.searchFilterListButtons {
+	BACKGROUND-COLOR: #9cc2e4
+}
+FORM {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+BODY.emp {
+	MARGIN: 0px
+}
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica
+}
+SPAN.emp {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica
+}
+TH.emp {
+	FONT-SIZE: 8pt; COLOR: #006682; TEXT-ALIGN: left
+}
+TD.emp_data {
+	FONT-SIZE: 8pt; COLOR: black
+}
+SPAN.emp {
+	FONT-SIZE: 8pt; COLOR: black
+}
+SPAN.labeltext {
+	FONT-SIZE: 8pt; COLOR: black
+}
+SPAN.emp {
+	FONT-WEIGHT: bold
+}
+TD.emp_dark {
+	COLOR: yellow; BACKGROUND-COLOR: #006682
+}
+TD.emp_light {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #333333; BACKGROUND-COLOR: #eeeeee
+}
+TD.emp_white {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: white
+}
+TABLE.emp {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+TD.section {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+A {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.emp_menu {
+	COLOR: white
+}
+A.emp_menu:link {
+	COLOR: white
+}
+A.emp_menu:visited {
+	COLOR: white
+}
+A.emp_menu:active {
+	COLOR: yellow
+}
+A.emp_menu:hover {
+	COLOR: yellow
+}
+A.emp {
+	COLOR: #00a1cf; TEXT-DECORATION: underline
+}
+A.emp_large {
+	COLOR: #00a1cf; TEXT-DECORATION: underline
+}
+A.emp:link {
+	COLOR: #00a1cf; TEXT-DECORATION: underline
+}
+A.emp_large:link {
+	COLOR: #00a1cf; TEXT-DECORATION: underline
+}
+A.emp:visited {
+	COLOR: #00a1cf; TEXT-DECORATION: underline
+}
+A.emp_large:visited {
+	COLOR: #00a1cf; TEXT-DECORATION: underline
+}
+A.emp:active {
+	COLOR: #006682
+}
+A.emp:hover {
+	COLOR: #006682
+}
+A.emp_large {
+	FONT-SIZE: medium
+}
+A.emp_large:link {
+	FONT-SIZE: medium
+}
+A.emp_large:visited {
+	FONT-SIZE: medium
+}
+FORM.emp {
+	MARGIN: 5px 0px
+}
+FORM.hidden {
+	DISPLAY: none
+}
+TD.result {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: green
+}
+A.result {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #00a1cf
+}
+A.result:link {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #00a1cf
+}
+A.result:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #00a1cf
+}
+A.result:hover {
+	COLOR: #006682
+}
+A.result:active {
+	COLOR: #006682
+}
+TH.labeltext {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #333333; BACKGROUND-COLOR: #eeeeee
+}
+TR.resultdiv{
+	FONT-WEIGHT: Normal; FONT-SIZE: 8px;  BACKGROUND-COLOR: #FFFFEE;border: 0px solid #FFFFEE;
+}
+TD.resultdiv{
+	FONT-WEIGHT: Normal; FONT-SIZE: 8pt;  BACKGROUND-COLOR: #FFFFEE;border: 0px solid #FFFFEE;
+}
+TH.resultdiv{
+	FONT-WEIGHT: Normal; FONT-SIZE: 8px;  BACKGROUND-COLOR: #FFFFEE;border: 0px solid #FFFFEE;
+}
+.SC {
+     scrollbar-arrow-color:#000000;
+     scrollbar-base-color:#FFFFEE;
+     scrollbar-face-color:#FCCFB1;
+     scrollbar-darkshadow-color:#FFBB66;
+	 BACKGROUND-COLOR: #FFFFEE
+	}
+.SCALL {scrollbar-3dlight-color:#FFBB66;
+     scrollbar-arrow-color:#000000;
+     scrollbar-base-color:#FFCB66;
+     scrollbar-darkshadow-color:#FFBB66;
+     scrollbar-face-color:#FCCFB1;
+     scrollbar-highlight-color:#FFBB66;
+     scrollbar-shadow-color:#FCCFB1
+	}
+
+
+
+	tr.cal{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #000000;
+	  background-color : #FFFFEE;
+	}
+
+	td.cal{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #000000;
+	  background-color : #FFFFEE;
+	}
+	select.month{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #000000;
+	  width : 85px;
+	}
+	input.year{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #000000;
+	  width : 30px;
+	}
+	td.clsCalWeekDay {
+	  color : #000000;
+	}
+	td.clsCalWeekHol {
+	  color : #FF3366;
+	}
+	td.calBgColor {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #FFFFEE;
+	  background-color : #FFFFEE;
+	}
+	.calBorderColor {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #FFFFEE;
+	  background-color : #FFFFAA;
+	}
+	td.calHighlightColor {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #FFFFEE;
+	  background-color : #ffffcc;
+	}
+	A.cal {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #000000;
+	  text-decoration : none;
+	}  
+	A.cal:Hover {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #FF0000;
+	  text-decoration : none;
+	} 
+	.disabled {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 10px;
+	  color : #808080;
+	  text-decoration : none;
+	}  
+
+  
+
+
+  div#tbl-container {
+	width: 400px;
+	height: 100px;
+	overflow: auto;
+}
+
+table {
+	
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid Orange;
+}
+
+div#tbl-container table th {
+	width: 100px;
+}
+
+thead th, thead th.locked	{
+	background-color: #FFFFBB;
+	border: 1px solid #FFFEFE;
+	position:relative;
+}
+	
+thead th {
+	top: expression(document.getElementById("tbl-container").scrollTop-2); /*IE5+ only*/
+	z-index: 20;
+}
+
+thead th.locked {
+	z-index: 30;
+}
+
+td.locked,  th.locked{
+	background-color: #efefef;
+	font-weight: bold;
+	left: expression(document.getElementById("tbl-container").scrollLeft); /*IE5+ only*/
+	position: relative;
+	z-index: 10;
+}
+
+
+
+  .transparent {
+    filter:alpha(opacity=90);
+    background-color:green;
+    display:none;
+    width:170;
+    height:100;
+    position:absolute;
+    color: white;
+    border: 1px solid green;
+}
+
+.asciiimage{
+            color           : black;
+            background-color: transparent;
+            font-size       : 2 px;
+            font-family     : "Courier New", Courier, mono;
+            line-height     : 1 px;
+            letter-spacing  : 1 px;
+        }
+.details{
+		font-family: MS Sans Serif, arial;
+		font-size:10;
+		font-weight: bold;
+		color: #000099;
+		background-color: #FFFFEE;
+}
+A.Button:hover	{	color:	#ff6600;	}
+A.Button{
+	text-decoration: none;
+	color:		#003366;
+	background:	#ffcc66;
+	}
+.Button	{
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#003366;
+	background:	#ffcc66;
+	margin-bottom:	2pt;
+	border-top:	2px solid #ffff99;
+	border-left:	2px solid #ffff99;
+	border-right:	2px solid #cc9933;
+	border-bottom:	2px solid #cc9933;
+	font-family:	Verdana, Arial,
+			"Comic Sans MS";
+	}
+
+.TextField	{
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#CC00CC;
+	background:	#ffffff;
+	border-top:		1px solid #C9C9C9;
+	border-left:	1px solid #C9C9C9;
+	border-right:	1px solid #C9C9C9;
+	border-bottom:	1px solid #C9C9C9;
+	font-family:	Verdana, Arial,"Comic Sans MS";
+	}
+.ListBox {
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#CC00CC;
+	background:	#ffffff;
+	font-family:	Verdana, Arial,"Comic Sans MS";
+
+}

@@ -1,0 +1,272 @@
+A {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT: Normal 9pt Verdana,Arial,Helvetica,sans-serif; BORDER-LEFT: 0px; CURSOR: pointer; COLOR: blue; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+A.listHilite {
+	COLOR: red
+}
+DIV.notebook {
+	BORDER-RIGHT: midnightblue thin inset; DISPLAY: none; BORDER-LEFT: midnightblue thin inset; WIDTH: 90%; BORDER-BOTTOM: midnightblue thin inset; HEIGHT: auto; BACKGROUND-COLOR: #ffffff
+}
+TABLE.notebook {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; WIDTH: 90%; BORDER-BOTTOM: 1px
+}
+TABLE.tab {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; WIDTH:40%; BORDER-BOTTOM: 1px; BORDER-COLOR:#CC0033;
+
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+DIV.scrollbar {
+	OVERFLOW: auto; WIDTH: 100%; HEIGHT: 100%
+}
+INPUT {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+INPUT.editinfo {
+	FONT: 10pt Verdana,Arial,Helvetica,sans-serif; VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+TEXTAREA {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt
+}
+H1.HiliteTitle {
+	COLOR: red
+}
+H2 {
+	FONT: bold 12pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default
+}
+H3 {
+	FONT: bold 9pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default
+}
+H3.Top {
+	FONT: bold italic 9pt Verdana,Arial,Helvetica,sans-serif; CURSOR: default;
+	BACKGROUND-COLOR: #999966; COLOR: #F3EF49
+}
+A:hover {
+	COLOR: #cd5c5c
+}
+BODY.editform {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: white
+}
+DIV.editform {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: white
+}
+TH.editinfo {
+	FONT: bold 9pt Verdana,Arial,Helvetica,sans-serif; TEXT-ALIGN: left
+}
+TD.editinfo {
+	FONT: 9pt Verdana,Arial,Helvetica,sans-serif; VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+.updated {
+	BACKGROUND-COLOR: yellow
+}
+TD.results {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #FFBB44
+}
+TH.results {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana
+}
+TH.results {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #FFBB44
+}
+.row_odd {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+.row_even {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+TR.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FF9933
+}
+TR.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFCC00
+}
+TR.row_title {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #999966;
+	FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TH.row_title {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #999966 ;FONT-WEIGHT: bold; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+.row_title {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; BORDER-BOTTOM: 1px; BORDER-COLOR:WHITE;
+}
+TD.row_title {
+	FONT-SIZE: 9pt; BACKGROUND-COLOR: #999966 ;FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif
+}
+TH.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FF9933 ;FONT-WEIGHT: bold; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TD.row_odd {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FF9933; FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TH.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFCC00 ;FONT-WEIGHT: bold; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+TD.row_even {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #FFCC00; FONT-WEIGHT: normal; FONT-FAMILY: Verdana,Arial,helvetica,sans-serif;
+}
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,arial,helvetica
+}
+A {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+.hidden {
+	DISPLAY: none
+}
+
+.SC {
+     scrollbar-arrow-color:#00000;
+     scrollbar-base-color:#92BCCF;
+     scrollbar-face-color:#FFCC00;
+     scrollbar-darkshadow-color:#FF9933;
+	 BACKGROUND-COLOR: #FFCC66
+	}
+.SCALL {scrollbar-3dlight-color:#FF3333;
+     scrollbar-arrow-color:;
+     scrollbar-base-color:#FF0088;
+     scrollbar-darkshadow-color:#FF9933;
+     scrollbar-face-color:#FF9933;
+     scrollbar-highlight-color:#FF9933;
+     scrollbar-shadow-color:#92BCCF
+	}
+	tr.cal{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #000000;
+	  background-color : #FFBB44;
+	}
+
+	td.cal{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #000000;
+	  background-color : #FFBB44;
+	}
+	select.month{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #000000;
+	  width : 85px;
+	}
+	input.year{
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #000000;
+	  width : 30px;
+	}
+	td.clsCalWeekDay {
+	  color : #000000;
+	}
+	td.clsCalWeekHol {
+	  color : #FF3366;
+	}
+	td.calBgColor {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #ffffff;
+	  background-color : #FFBB44;
+	}
+	.calBorderColor {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #ffffff;
+	  background-color : #a9a9a9;
+	}
+	td.calHighlightColor {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #ffffff;
+	  background-color : #ffffcc;
+	}
+	A.cal {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #000000;
+	  text-decoration : none;
+	}  
+	A.cal:Hover {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #FF0000;
+	  text-decoration : none;
+	} 
+	.disabled {
+	  font-family : Arial,Helvetica,Sans-serif;
+	  font-size : 8px;
+	  color : #808080;
+	  text-decoration : none;
+	}  
+  div#tbl-container {
+	width: 400px;
+	height: 100px;
+	overflow: auto;
+}
+
+table {
+	
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid #c0c0c0;
+}
+
+div#tbl-container table th {
+	width: 100px;
+}
+
+thead th, thead th.locked	{
+	background-color: #ededed;
+	border: 1px solid #c0c0c0;
+	position:relative;
+}
+	
+thead th {
+	top: expression(document.getElementById("tbl-container").scrollTop-2); /*IE5+ only*/
+	z-index: 20;
+}
+
+thead th.locked {
+	z-index: 30;
+}
+
+td.locked,  th.locked{
+	background-color: #efefef;
+	font-weight: bold;
+	left: expression(document.getElementById("tbl-container").scrollLeft); /*IE5+ only*/
+	position: relative;
+	z-index: 10;
+}
+
+
+
+  .transparent {
+    filter:alpha(opacity=90);
+    background-color:green;
+    display:none;
+    width:170;
+    height:100;
+    position:absolute;
+    color: white;
+    border: 1 green solid;
+}

@@ -1,0 +1,532 @@
+<HTML>
+	<head>
+		<title>Calendar</title>
+		<LINK href="calstyles.css" type="text/css" rel="stylesheet">
+
+		<script LANGUAGE="JavaScript"> 
+        var year="";
+        var month="";
+        var rows1="";
+        var cells1="";
+        var value="";
+        function setToday1() 
+          {
+             var now   = new Date();
+              var day   = now.getDate(); 
+              month = now.getMonth();
+              year  = now.getFullYear();
+              if (year<100) {year += 1900;}
+                this.focusDay = day;
+                tbMonthPopUp1.style.display="none"; 
+              //frmCalButtons1.TodaysDate.style.display=""; 
+              displayCalendar(day, month, year);
+           }
+        function setToday() 
+          {
+            value=window.dialogArguments;
+            if((value=="")||(value=="undefined"))             
+              {
+                var now   = new Date();
+                var day   = now.getDate(); 
+                month = now.getMonth();
+                year  = now.getFullYear();
+                if (year<100) {year += 1900;}
+                 {
+                 this.focusDay = day;
+                 }
+              //frmCalButtons1.TodaysDate.style.display="none"; 
+              displayCalendar(day, month, year);
+              }
+            else if(value!=""||isNull(value)!=true||value!="undefined")
+             {
+               var day1=value.split("-");
+               day=day1[0];
+               day=parseInt(day);
+                month=day1[1];
+               if(month=="jan"||month=="JAN"||month=="Jan")
+                   month=0;
+                else if(month=="feb"||month=="FEB"||month=="Feb")
+                   month=1;
+                   if(month=="mar"||month=="MAR"||month=="Mar")
+                   month=2;
+                   if(month=="apr"||month=="APR"||month=="Apr")
+                   month=3;
+                   if(month=="may"||month=="MAY"||month=="May")
+                   month=4;
+                   if(month=="jun"||month=="JUN"||month=="Jun")
+                   month=5;
+                   if(month=="jul"||month=="JUL"||month=="Jul")
+                   month=6;
+                   if(month=="aug"||month=="AUG"||month=="Aug")
+                   month=7;
+                   if(month=="sep"||month=="SEP"||month=="Sep")
+                   month=8;
+                   if(month=="oct"||month=="OCT"||month=="Oct")
+                   month=9;
+                   if(month=="nov"||month=="NOV"||month=="Nov")
+                   month=10;
+                   if(month=="dec"||month=="DEC"||month=="Dec")
+                   month=11;
+                   year=day1[2];
+                year=parseInt(year);
+                 //frmCalButtons1.TodaysDate.style.display="none";            
+               displayCalendar(day, month, year);
+             }
+                   
+          }
+
+   
+   
+ 	     function setPreviousYear() 
+          {
+            tbMonthPopUp1.style.display="none"; 
+            var day   = 0; 
+            year--;
+            //frmCalButtons1.TodaysDate.style.display="none"; 
+            displayCalendar(day, month, year); 
+          }
+        function setPreviousMonth() 
+          {
+            tbMonthPopUp1.style.display="none"; 
+            //frmCalButtons1.nextYear.style.visibility="hidden"; 
+            //frmCalButtons1.previousYear.style.visibility="hidden";
+            var day   = 0; 
+            if (month == 0)
+              {
+                month = 11;
+                if (year > 1000)
+                  {
+                    year--;
+                  }
+              }
+            else
+              {
+                month--; 
+              }
+            //frmCalButtons1.TodaysDate.style.display="none";  
+            displayCalendar(day, month, year); 
+          }
+  
+        function setNextMonth() 
+          {
+            tbMonthPopUp1.style.display="none"; 
+            //frmCalButtons1.nextYear.style.visibility="hidden"; 
+            //frmCalButtons1.previousYear.style.visibility="hidden";
+            //frmCalButtons1.TodaysDate.style.display="none"; 
+            var day   = 0;
+            if (month == 11)
+              {
+                month = 0;
+                year++;
+              } 
+            else
+              {
+                month++; 
+              }
+            displayCalendar(day, month, year); 
+          }
+ 
+        function setNextYear()
+          {
+            tbMonthPopUp1.style.display="none"; 
+            var day   = 0; 
+            year++;
+            displayCalendar(day, month, year); 
+           // frmCalButtons1.TodaysDate.style.display="none"; 
+          }
+ 
+        function displayCalendar(day, month, year) 
+          {
+            day = parseInt(day); 
+            month = parseInt(month);
+            year = parseInt(year);  
+            var i = 0;
+            var now = new Date();
+            if (day == 0)
+              {
+                var nowDay = now.getDate();
+              }
+            else
+              {     
+                var nowDay = day;
+              }
+            var days = getDaysInMonth(month+1,year);
+            var DaysInMonth=days;
+            var firstOfMonth = new Date (year, month, 1); 
+            var startingPos  = firstOfMonth.getDay();
+            days += startingPos; 
+            if(month==0)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="January, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              } 
+            if(month==1)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="Feburary, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              } 
+            if(month==2)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="March, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              } 
+            if(month==3)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="April, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              } 
+            if(month==4)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="May, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              }  
+            if(month==5)
+              { 
+                tbDisplayCalendar.rows(0).cells(1).innerText="June, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              }    
+            if(month==6)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="July, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              }   
+            if(month==7)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="August, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              }   
+            if(month==8)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="September, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              }  
+            if(month==9)
+              {
+                tbDisplayCalendar.rows(0).cells(1).innerText="October, ";
+                tbDisplayCalendar.rows(0).cells(2).innerText=year;
+               }  
+            if(month==10)
+              {
+                 tbDisplayCalendar.rows(0).cells(1).innerText="November, ";
+                 tbDisplayCalendar.rows(0).cells(2).innerText=year;
+              }     
+            if(month==11)
+              {     
+                 tbDisplayCalendar.rows(0).cells(1).innerText="December, " ;          
+                 tbDisplayCalendar.rows(0).cells(2).innerText= year ;
+              }  
+            var now2   = new Date();   
+            var day2   = now2.getDate(); 
+            month2 = now2.getMonth();
+            year2  = now.getFullYear();
+            for (i = 0; i < startingPos; i++)
+              {
+                tbDisplayCalendar.rows(3).cells(i).innerText="  ";
+                if(rows1==3 && cells1==i)
+                     return (0);
+              }
+            for(i=startingPos;i<7;i++)
+              {
+                tbDisplayCalendar.rows(3).cells(i).innerText= i-startingPos+1;
+                
+                if(rows1==3 && cells1==i)
+                  {
+                    return (i-startingPos+1+' ');
+                  }  
+               }    
+            var a=7-startingPos + 1;
+            for(j=4;j<9;j++)
+              { 
+                for(i=0;i<7;i++)    
+                 {
+                   tbDisplayCalendar.rows(j).cells(i).innerText=a;
+                   if (a==nowDay && month==month2 && year==year2)
+                     tbDisplayCalendar.rows(j).cells(i).innerHTML="<div class='clsCalDaySelect'>" + a + "</div>";
+                   else if(a==nowDay)
+                     tbDisplayCalendar.rows(j).cells(i).innerHTML="<div class='clsCalDaySelect'>" + a + "</div>";
+                   a=a+1;
+                   if(rows1==j && cells1==i)
+                     {
+                       return (a-1);
+                     }  
+                   if (a>DaysInMonth)   
+                      break;
+                  }
+                if (a>DaysInMonth)   
+                      break;  
+              }                 
+            var temp=days%7;
+            if(j<8 && temp != 0)
+              {
+                for(i=temp;i<7;i++)
+                  {
+                    tbDisplayCalendar.rows(7).cells(i).innerText="  ";
+                    if(rows1==j && cells1==i)
+                    return (0);
+                   }
+                 for(i=0;i<7;i++)
+                   {
+                     tbDisplayCalendar.rows(8).cells(i).innerText="  ";
+                     if(rows1==8 && cells1==i)
+                     return (0);
+                   }
+                     
+               }                    
+             if(j==7)
+               {
+                 for(i=temp;i<7;i++)
+                   {
+                     tbDisplayCalendar.rows(8).cells(i).innerText="  ";
+                     if(rows1==8 && cells1==i)
+                     return (0);
+                   }
+                }
+              var month1=month2 + 1; 
+              tbDisplayCalendar.rows(9).cells(0).innerHTML="<Div class='clsCalToday' onclick=setToday1()>Today's Date : " + month1 + "/" + day2 + "/" + year2 + "</DIV>" 
+          }
+ 
+        function getDaysInMonth(month,year)
+          {
+            var days;
+            if (month==1 || month==3 || month==5 || month==7 || month==8 ||month==10 || month==12)  days=31;
+            else if (month==4 || month==6 || month==9 || month==11) days=30;
+            else if (month==2)
+              { 
+                if (isLeapYear(year))
+                  {days=29;}
+                else {days=28;}
+              }
+             return (days);
+           }
+        function isLeapYear (Year)
+          {
+            if (((Year % 4)==0) && ((Year % 100)!=0) || ((Year % 400)==0))
+              {
+                return (true);
+               }
+             else
+               {
+                 return (false);
+                }
+          }
+ 
+        function returnDate(rows,cells)
+          {
+            rows1=rows;
+            cells1=cells;
+            var back=displayCalendar(0, month ,year);
+            returnDate1(back);
+          }
+ 
+        function returnDate1(inDay)
+          {
+            var newday = inDay;
+			var temp;
+            var moninmmm;
+			month=month+1;
+            var arr = new Array('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
+            for(var index =0;index < 12;index++)
+              {
+                if(month == index)	
+                 {
+      	           moninmmm = arr[index];
+                  }
+              }
+            if ((""+month).length == 1)
+              {
+				month="0"+month; 
+              }
+            if (parseInt(newday) < 10)
+              { 
+                newday="0"+parseInt(newday);
+               }
+            if (newday != "     ")
+               {
+				 // Edited by Kalyan
+				 //temp =  year +"-"+ moninmmm + "-" + newday;
+				 temp =  year +"-"+ month + "-" + newday;
+                 window.returnValue = temp;
+                 if(inDay!=0)
+                   window.close();
+                 else
+                  {
+                   tbMonthPopUp1.style.display="none";  
+                    //frmCalButtons1.TodaysDate.style.display="none"; 
+                   } 
+                }
+          }
+ 
+        function fnDisplay()
+          {
+            tbMonthPopUp1.style.display="none"; 
+            //frmCalButtons1.TodaysDate.style.display="none";    
+          }
+   
+        function fnPopUpMonths()
+          {
+            tbMonthPopUp1.style.display="";
+            //frmCalButtons1.TodaysDate.style.display="none"; 
+          }  
+  
+        function fnChangeMonth( returnValue)
+          {
+            if( returnValue==0)
+              month=0;
+            else if( returnValue==1)
+              month=1; 
+            else if( returnValue==2)
+              month=2;
+            else if( returnValue==3)
+              month=3;
+            else if( returnValue==4)
+              month=4;
+            else if( returnValue==5)
+              month=5;
+            else if( returnValue==6)
+              month=6;
+            else if( returnValue==7)
+              month=7;
+            else if( returnValue==8)
+               month=8;
+             else if( returnValue==9)
+               month=9;
+             else if( returnValue==10)
+               month=10;
+             else if( returnValue==11)
+               month=11;  
+             displayCalendar(0, month ,year);
+             tbMonthPopUp1.style.display="none"; 
+             //frmCalButtons1.TodaysDate.style.display="none"; 
+          } 
+    
+        function SetTodayBotton()
+          {
+            //frmCalButtons1.TodaysDate.style.display=""; 
+             tbMonthPopUp1.style.display="none"; 
+          }  
+         
+           
+		</script>
+        </head>
+     <body onload=setToday()>
+      <form id="frmCalButtons1" name="frmCalButtons1">
+        <table border="3" cellPadding="1" cellSpacing="1" id="tbContainer" name="tbContainer" class="notepad" style="WIDTH: 235px; HEIGHT: 203px">
+          <tbody>
+            <tr>
+              <td title="">           
+                <table align="center" border="0" cellPadding="0" cellSpacing="0" id="tbDisplayCalendar" name="tbDisplayCalendar" class="clsCalDay"><!--style="HEIGHT: 215px; LEFT: 1px;POSITION: relative; TOP: 1px; WIDTH: 244px"- -->
+                  <tr class="clsCalHeading">
+                    <td align="middle" rowspan="2"><IMG id=previousMonth title="Previous Month" onclick=setPreviousMonth() height=19 src="CalLeft.gif" width=18 border=0 name=previousMonth ></td>
+                    <td align="right" rowspan="2" Colspan="3" onclick="fnPopUpMonths()"></td>
+                    <td align="left" rowspan="2" onclick="fnDisplay()"></td>
+                    <td align="left"><IMG id=nextYear title="Next Year" onclick=setNextYear() height=10 src="Up.gif" width=12 name=nextYear ></td>
+                    <td align="middle" rowspan="2"><IMG id=nextMonth title="Next Month" onclick=setNextMonth() height=19 src="CalRight.gif" width=18 border=0 name=nextMonth ></td>
+                
+                    
+                  </tr>
+                  <tr class="clsCalHeading"><td>
+						<IMG id=previousYear title="Previous Year" onclick=setPreviousYear() height=10 src="Down.gif" width=12 name=previousYear >
+					</td>
+				  </tr>
+				  
+                  <tr>
+                   <td align="middle" class="clsCalWeekHol">&nbsp;Sun&nbsp;</td>
+                   <td align="middle" class="clsCalWeekDay">&nbsp;Mon&nbsp;</td>
+                   <td align="middle" class="clsCalWeekDay">&nbsp;Tue&nbsp;</td>
+                   <td align="middle" class="clsCalWeekDay">&nbsp;Wed&nbsp;</td>
+                   <td align="middle" class="clsCalWeekDay">&nbsp;Thu&nbsp;</td>
+                   <td align="middle" class="clsCalWeekDay">&nbsp;Fri&nbsp;</td>
+                   <td align="middle" class="clsCalWeekEnd">&nbsp;Sat&nbsp;</td>
+                  </tr>
+              
+                  <tr>
+                    <td class="clsCalWeekNum" title ="" align="middle" onClick="returnDate(3,0)"></td>
+                    <td align="middle" class="clsCalWeekNum" onClick="returnDate(3,1)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(3,2)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(3,3)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(3,4)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(3,5)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(3,6)"></td>
+                  </tr>
+              
+                  <tr>
+                    <td class="clsCalWeekNum" onclick="returnDate(4,0)" align="middle"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(4,1)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(4,2)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(4,3)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(4,4)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(4,5)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(4,6)"></td>
+                  </tr>
+              
+                  <tr>
+                    <td class="clsCalWeekNum" onclick="returnDate(5,0)" align="middle"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(5,1)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(5,2)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(5,3)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(5,4)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(5,5)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(5,6)"></td>
+                  </tr>
+             
+                  <tr>
+                    <td class="clsCalWeekNum" onclick="returnDate(6,0)" align="middle"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(6,1)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(6,2)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(6,3)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(6,4)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(6,5)"></td>
+                    <td align="middle" class="clsCalWeekNum" onclick="returnDate(6,6)"></td>
+                  </tr>
+              
+                 <tr>
+                   <td class="clsCalWeekNum" onclick="returnDate(7,0)" align="middle"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(7,1)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(7,2)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(7,3)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(7,4)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(7,5)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(7,6)"></td>
+                 </tr>
+              
+                 <tr>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,0)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,1)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,2)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,3)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,4)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,5)"></td>
+                   <td align="middle" class="clsCalWeekNum" onclick="returnDate(8,6)"></td>
+                 </tr>
+                  
+                 <tr onclick="SetTodayBotton()">
+                   <td colSpan="7" align="middle"></td>
+                 </tr>
+               </table>
+             </td>
+           </tr>
+         </tbody>
+       </table>
+       <p>
+       <table cellPadding="0" cellSpacing="0" id="tbMonthPopUp1" class="clsCalPopUp" style="DISPLAY: none; WIDTH: 70px; HEIGHT: 171px" name="tbMonthPopUp1">
+         <tr>
+           <td>
+       <table border="0" cellPadding="0" cellSpacing="0" id="tbMonthPopUp" class="clsCalPopUpData">
+        <tr><td onclick="fnChangeMonth(0)">January</td></tr>
+        <tr><td onclick="fnChangeMonth(1)">Feburary</td></tr>
+        <tr><td onclick="fnChangeMonth(2)">March</td></tr>
+        <tr><td onclick="fnChangeMonth(3)">April</td></tr>
+        <tr><td onclick="fnChangeMonth(4)">May</td></tr>
+        <tr><td onclick="fnChangeMonth(5)">June</td></tr>
+        <tr><td onclick="fnChangeMonth(6)">July</td></tr>
+        <tr><td onclick="fnChangeMonth(7)">August</td></tr>
+        <tr><td onclick="fnChangeMonth(8)">September</td></tr>
+        <tr><td onclick="fnChangeMonth(9)">October</td></tr>
+        <tr><td onclick="fnChangeMonth(10)">November</td></tr>
+        <tr><td onclick="fnChangeMonth(11)">December</td></tr>
+      </table></td></tr>
+      </table></p>
+        
+    </form>
+  </body>
+</HTML>
